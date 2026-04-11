@@ -77,7 +77,7 @@ const Navbar = () => {
               </a>
             ))}
             <a 
-              href="https://wa.me/yournumber" 
+              href="https://wa.me/233275683212" 
               className="bg-[#25D366] hover:bg-[#128C7E] text-white px-7 py-3 rounded-full text-sm font-bold transition-all duration-300 shadow-lg hover:shadow-[#25D366]/20 hover:scale-105 active:scale-95"
             >
               Join Academy
@@ -112,7 +112,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a 
-                href="https://wa.me/yournumber" 
+                href="https://wa.me/233275683212" 
                 className="block w-full text-center bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-4 rounded-full text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-[#25D366]/20"
               >
                 Join Academy
@@ -528,7 +528,7 @@ const Pricing = () => {
               </ul>
 
               <a 
-                href="https://wa.me/yournumber" 
+                href="https://wa.me/233275683212" 
                 className={`w-full py-4 rounded-full text-center font-bold transition-all duration-300 flex items-center justify-center gap-2 group/btn ${
                   plan.popular 
                     ? 'bg-[#25D366] text-white hover:bg-[#128C7E] shadow-lg hover:shadow-[#25D366]/20 hover:scale-105 active:scale-95' 
@@ -700,7 +700,7 @@ const Contact = () => {
             >
               <MessageCircle className="text-[#25D366]" size={32} />
               <span className="font-bold text-white">Contact on WhatsApp</span>
-              <span className="text-sm text-gray-400">+233 27 568 3212</span>
+              <span className="text-sm text-gray-400">027 568 3212</span>
             </a>
             
             <a 
@@ -756,7 +756,7 @@ const CTA = () => {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a 
-                href="https://wa.me/yournumber" 
+                href="https://wa.me/233275683212" 
                 className="w-full sm:w-auto bg-[#25D366] text-white hover:bg-[#128C7E] px-12 py-5 rounded-full text-xl font-bold transition-all duration-300 flex items-center justify-center gap-3 shadow-2xl hover:shadow-[#25D366]/20 hover:scale-105 active:scale-95"
               >
                 <MessageCircle size={28} /> Chat on WhatsApp
@@ -824,7 +824,7 @@ const Footer = () => {
 const StickyJoinButton = () => {
   return (
     <a
-      href="https://wa.me/yournumber"
+      href="https://wa.me/233275683212"
       className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#128C7E] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center hover:shadow-[#25D366]/20 active:scale-95"
       aria-label="Join on WhatsApp"
     >
