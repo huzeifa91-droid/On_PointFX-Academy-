@@ -127,7 +127,7 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section className="relative pt-48 pb-32 lg:pt-64 lg:pb-40 overflow-hidden">
+    <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-24 overflow-hidden">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-full bg-brand/5 blur-[140px] rounded-full -z-10" />
       
       <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
@@ -145,7 +145,7 @@ const Hero = () => {
           
           <motion.h1 
             variants={itemVariants}
-            className="text-4xl md:text-8xl font-display font-extrabold tracking-tight text-white mb-8 leading-[1.05] text-gradient"
+            className="text-3xl md:text-6xl font-display font-extrabold tracking-tight text-white mb-6 leading-[1.05] text-gradient"
           >
             Master Forex <br />
             <span className="text-brand">With Precision</span>
@@ -153,7 +153,7 @@ const Hero = () => {
           
           <motion.p 
             variants={itemVariants}
-            className="max-w-2xl mx-auto text-base md:text-xl text-gray-400 mb-12 leading-relaxed"
+            className="max-w-2xl mx-auto text-sm md:text-lg text-gray-400 mb-10 leading-relaxed"
           >
             Join On_PointFX Academy and learn the exact institutional strategies used by the top 1% of traders. 
             No indicators, no guesswork—just pure market mechanics.
@@ -165,13 +165,13 @@ const Hero = () => {
           >
             <a 
               href="#services" 
-              className="w-full sm:w-auto bg-brand hover:bg-brand-dark text-white px-6 py-3 md:px-10 md:py-5 rounded-full text-base md:text-lg font-bold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-brand/20 hover:scale-105 active:scale-95"
+              className="w-full sm:w-auto bg-brand hover:bg-brand-dark text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-base font-bold transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-brand/20 hover:scale-105 active:scale-95"
             >
-              Start Learning <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              Start Learning <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a 
               href="#about" 
-              className="w-full sm:w-auto bg-white/5 hover:bg-white/10 text-white border border-white/10 px-6 py-3 md:px-10 md:py-5 rounded-full text-base md:text-lg font-bold transition-all hover:border-white/20"
+              className="w-full sm:w-auto bg-white/5 hover:bg-white/10 text-white border border-white/10 px-6 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-base font-bold transition-all hover:border-white/20"
             >
               Our Philosophy
             </a>
@@ -235,7 +235,7 @@ const TrustBar = () => {
 
 const About = () => {
   return (
-    <section id="about" className="py-24 md:py-32 lg:py-40 bg-navy relative overflow-hidden">
+    <section id="about" className="py-16 md:py-20 lg:py-24 bg-navy relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-24 items-center">
           <motion.div
@@ -245,7 +245,7 @@ const About = () => {
             transition={{ duration: 0.7 }}
           >
             <span className="text-brand font-bold uppercase tracking-[0.2em] text-xs mb-6 block">Our Legacy</span>
-            <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-8 leading-tight tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 leading-tight tracking-tight">
               Institutional Education <br />
               <span className="text-gray-500">For The Modern Trader</span>
             </h2>
@@ -321,16 +321,16 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 md:py-32 lg:py-40 bg-navy-light relative">
+    <section id="services" className="py-16 md:py-20 lg:py-24 bg-navy-light relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16 md:mb-24">
+        <div className="text-center mb-12 md:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <span className="text-brand font-bold uppercase tracking-[0.2em] text-xs mb-6 block">Our Ecosystem</span>
-            <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-8 tracking-tight">The Path To Mastery</h2>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">The Path To Mastery</h2>
             <p className="max-w-2xl mx-auto text-gray-400 text-lg leading-relaxed">
               We provide the tools, the knowledge, and the community. You provide the dedication. Together, we build your trading career.
             </p>
@@ -345,7 +345,7 @@ const Services = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="p-10 rounded-3xl glass glass-hover group"
+              className="p-8 rounded-3xl glass glass-hover group"
             >
               <div className="mb-8 p-4 bg-brand/10 rounded-2xl w-fit text-brand group-hover:bg-brand group-hover:text-white transition-all duration-500">
                 {s.icon}
@@ -362,7 +362,7 @@ const Services = () => {
 
 const WhyUs = () => {
   return (
-    <section id="why-us" className="py-24 md:py-32 lg:py-40 bg-navy">
+    <section id="why-us" className="py-16 md:py-20 lg:py-24 bg-navy">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-24 items-center">
           <motion.div
@@ -391,7 +391,7 @@ const WhyUs = () => {
             className="order-1 lg:order-2"
           >
             <span className="text-brand font-bold uppercase tracking-[0.2em] text-xs mb-6 block">Why On_PointFX</span>
-            <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-10 tracking-tight">The Edge You Need</h2>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-8 tracking-tight">The Edge You Need</h2>
             <div className="space-y-10">
               {[
                 {
@@ -474,16 +474,16 @@ const Pricing = () => {
   ];
 
   return (
-    <section id="pricing" className="py-24 md:py-32 lg:py-40 bg-navy relative overflow-hidden">
+    <section id="pricing" className="py-16 md:py-20 lg:py-24 bg-navy relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16 md:mb-24">
+        <div className="text-center mb-12 md:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <span className="text-brand font-bold uppercase tracking-[0.2em] text-xs mb-6 block">Enrollment</span>
-            <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-8 tracking-tight">Join the Academy</h2>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">Join the Academy</h2>
             <p className="max-w-2xl mx-auto text-gray-400 text-lg leading-relaxed">
               Choose the plan that fits your trading goals. From basics to advanced institutional mastery, we have you covered.
             </p>
@@ -498,7 +498,7 @@ const Pricing = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`p-10 rounded-[2.5rem] relative transition-all duration-500 group ${
+              className={`p-8 rounded-[2.5rem] relative transition-all duration-500 group ${
                 plan.popular 
                   ? 'bg-brand/10 border-2 border-brand brand-glow scale-105 z-10' 
                   : 'glass glass-hover border-white/5'
@@ -576,16 +576,16 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-24 md:py-32 lg:py-40 bg-navy-light">
+    <section id="testimonials" className="py-16 md:py-20 lg:py-24 bg-navy-light">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16 md:mb-24">
+        <div className="text-center mb-12 md:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <span className="text-brand font-bold uppercase tracking-[0.2em] text-xs mb-6 block">Success Stories</span>
-            <h2 className="text-4xl md:text-6xl font-display font-bold text-white tracking-tight">Trusted By The Best</h2>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white tracking-tight">Trusted By The Best</h2>
           </motion.div>
         </div>
 
@@ -597,7 +597,7 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="p-10 rounded-3xl glass relative"
+              className="p-8 rounded-3xl glass relative"
             >
               <div className="flex items-center gap-5 mb-8">
                 <img src={t.avatar} alt={t.name} className="w-14 h-14 rounded-2xl border border-brand/30 object-cover" referrerPolicy="no-referrer" />
@@ -630,16 +630,16 @@ const Results = () => {
   ];
 
   return (
-    <section id="results" className="py-24 md:py-32 lg:py-40 bg-navy relative overflow-hidden">
+    <section id="results" className="py-16 md:py-20 lg:py-24 bg-navy relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="text-center mb-16 md:mb-24">
+        <div className="text-center mb-12 md:mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <span className="text-brand font-bold uppercase tracking-[0.2em] text-xs mb-6 block">Performance</span>
-            <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-8 tracking-tight">Results & Performance</h2>
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">Results & Performance</h2>
             <p className="max-w-2xl mx-auto text-gray-400 text-lg leading-relaxed">
               Transparency is at the core of our academy. Here are some of our recent trade results and performance metrics.
             </p>
@@ -683,18 +683,18 @@ const Results = () => {
 };
 const TelegramSignals = () => {
   return (
-    <section className="py-24 md:py-32 lg:py-40 bg-navy-light relative overflow-hidden">
+    <section className="py-16 md:py-20 lg:py-24 bg-navy-light relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="glass p-12 md:p-16 rounded-[3rem] border border-white/5"
+          className="glass p-10 md:p-12 rounded-[2.5rem] border border-white/5"
         >
           <div className="w-20 h-20 bg-[#0088cc]/10 rounded-3xl flex items-center justify-center mx-auto mb-8 text-[#0088cc]">
             <Send size={40} />
           </div>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6 tracking-tight">Get Our Trading Signals</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4 tracking-tight">Get Our Trading Signals</h2>
           <p className="text-gray-400 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
             Join our Telegram channel to receive real-time trade signals and market updates.
           </p>
@@ -712,20 +712,20 @@ const TelegramSignals = () => {
 
 const CTA = () => {
   return (
-    <section className="py-24 md:py-32 lg:py-40 bg-navy relative overflow-hidden">
+    <section className="py-16 md:py-20 lg:py-24 bg-navy relative overflow-hidden">
       <div className="max-w-5xl mx-auto px-6 lg:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-br from-brand to-brand-dark rounded-[3rem] p-12 md:p-24 text-center shadow-2xl shadow-brand/40 relative overflow-hidden"
+          className="bg-gradient-to-br from-brand to-brand-dark rounded-[2.5rem] p-10 md:p-16 text-center shadow-2xl shadow-brand/40 relative overflow-hidden"
         >
           {/* Decorative circles */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32 blur-3xl" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full -ml-32 -mb-32 blur-3xl" />
           
           <div className="relative z-10">
-            <h2 className="text-4xl md:text-7xl font-display font-extrabold text-white mb-10 leading-[1.1] tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-display font-extrabold text-white mb-8 leading-[1.1] tracking-tight">
               Ready To Start Your <br /> Trading Career?
             </h2>
             <p className="text-white/80 text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed">
