@@ -681,9 +681,9 @@ const Results = () => {
     </section>
   );
 };
-const TelegramSignals = () => {
+const Contact = () => {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-navy-light relative overflow-hidden">
+    <section id="contact" className="py-16 md:py-20 lg:py-24 bg-navy-light relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -691,19 +691,42 @@ const TelegramSignals = () => {
           viewport={{ once: true }}
           className="glass p-10 md:p-12 rounded-[2.5rem] border border-white/5"
         >
-          <div className="w-20 h-20 bg-[#0088cc]/10 rounded-3xl flex items-center justify-center mx-auto mb-8 text-[#0088cc]">
-            <Send size={40} />
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-10 tracking-tight">Get In Touch</h2>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <a 
+              href="https://wa.me/233275683212" 
+              className="flex flex-col items-center gap-3 p-6 rounded-2xl bg-[#25D366]/10 hover:bg-[#25D366]/20 transition-all border border-[#25D366]/20"
+            >
+              <MessageCircle className="text-[#25D366]" size={32} />
+              <span className="font-bold text-white">Contact on WhatsApp</span>
+              <span className="text-sm text-gray-400">+233 27 568 3212</span>
+            </a>
+            
+            <a 
+              href="https://t.me/yourchannel" 
+              className="flex flex-col items-center gap-3 p-6 rounded-2xl bg-[#0088cc]/10 hover:bg-[#0088cc]/20 transition-all border border-[#0088cc]/20"
+            >
+              <Send className="text-[#0088cc]" size={32} />
+              <span className="font-bold text-white">Join Telegram</span>
+              <span className="text-sm text-gray-400">@on_point_fx_channel</span>
+            </a>
           </div>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-4 tracking-tight">Get Our Trading Signals</h2>
-          <p className="text-gray-400 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-            Join our Telegram channel to receive real-time trade signals and market updates.
-          </p>
-          <a 
-            href="https://t.me/yourchannel" 
-            className="inline-flex items-center gap-3 bg-[#0088cc] hover:bg-[#0077b5] text-white px-10 py-5 rounded-full text-lg font-bold transition-all duration-300 shadow-lg hover:shadow-[#0088cc]/20 hover:scale-105 active:scale-95"
-          >
-            <Send size={20} /> Join on Telegram
-          </a>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-6">
+            <a 
+              href="mailto:realleak01@gmail.com"
+              className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+            >
+              <span className="text-sm">Email: realleak01@gmail.com</span>
+            </a>
+            <a 
+              href="https://instagram.com/on_point_fx" 
+              className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
+            >
+              <span className="text-sm">Follow: @on_point_fx</span>
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
@@ -823,7 +846,7 @@ export default function App() {
         <WhyUs />
         <Pricing />
         <Results />
-        <TelegramSignals />
+        <Contact />
         <Testimonials />
         <CTA />
       </main>
